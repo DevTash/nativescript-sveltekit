@@ -69,7 +69,7 @@
           <Label col="2" text={song.duration} style="color: #64748b; font-size: 12; vertical-align: center;" />
         </GridLayout>
       {/each}
-    {:else}
+    {:else if activeApp === 'movies'}
       <Label text="Continue watching" style="color: #0f172a; font-size: 20; font-weight: bold; margin-bottom: 10;" />
       {#each movies as movie}
         <GridLayout columns="110,*" style="background-color: white; border-radius: 12; margin-bottom: 10;">

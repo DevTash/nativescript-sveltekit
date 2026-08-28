@@ -1,5 +1,5 @@
 <script lang="ts">
-  let selectedMovie = $state('');
+  let selectedMovie = $state<string | null>(null);
   const movies = [
     { title: 'The Last Horizon', genre: 'Sci-fi · 2026', color: '#312e81' },
     { title: 'After the Rain', genre: 'Drama · 2025', color: '#0f766e' },
