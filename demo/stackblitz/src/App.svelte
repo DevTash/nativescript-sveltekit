@@ -3,6 +3,7 @@
   let activeApp = $state<AppName>('banking');
   let balanceVisible = $state(true);
   let playing = $state(false);
+  let transferSent = $state(false);
   let selectedMovie = $state<string | null>(null);
 
   const transactions = [
@@ -49,7 +50,8 @@
         <strong>{balanceVisible ? '$4,280.50' : '••••••••'}</strong>
         <button onclick={() => balanceVisible = !balanceVisible}>{balanceVisible ? 'Hide balance' : 'Show balance'}</button>
       </div>
-      <div class="actions"><button onclick={() => alert('Transfer ready')}>Send money</button><button>Add money</button></div>
+      <div class="actions"><button onclick={() => transferSent = true}>Send money</button><button>Add money</button></div>
+      {#if transferSent}<p class="confirmation">Transfer sent successfully.</p>{/if}
       <h3>Recent activity</h3>
       {#each transactions as transaction}
         <article class="row"><div><strong>{transaction[0]}</strong><small>{transaction[1]}</small></div><b>{transaction[2]}</b></article>
