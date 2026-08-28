@@ -11,8 +11,10 @@ NativeScript-SvelteKit is a Svelte 5 (runes-enabled) renderer/runtime for Native
 - Plugins (`src/plugins`) for `$showModal`, `$closeModal`, `$navigateTo`, `$navigateBack`
 - Built-in Svelte components (`src/components`) including `ActionBar`, `ListView`, `ListItem`, `Button`, `Label`, `StackLayout`
 - NativeScript webpack chain extension in `nativescript-sveltekit.webpack.js` with `svelte-loader` and runes support
-- Demo and starter template:
-  - `demo/`
+- Demo apps and starter template:
+  - `demo/banking/` — banking app
+  - `demo/music/` — music streaming app
+  - `demo/movies/` — movie streaming app
   - `packages/template-blank/`
 
 ## Quick start
