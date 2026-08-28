@@ -17,6 +17,18 @@ NativeScript-SvelteKit is a Svelte 5 (runes-enabled) renderer/runtime for Native
   - `demo/movies/` — movie streaming app
   - `packages/template-blank/`
 
+## Open the demos in StackBlitz
+
+Use StackBlitz to browse and edit each demo online:
+
+- [Open the banking demo in StackBlitz](https://stackblitz.com/github/DevTash/nativescript-sveltekit/tree/main/demo/banking)
+- [Open the music demo in StackBlitz](https://stackblitz.com/github/DevTash/nativescript-sveltekit/tree/main/demo/music)
+- [Open the movies demo in StackBlitz](https://stackblitz.com/github/DevTash/nativescript-sveltekit/tree/main/demo/movies)
+
+These links open the source in StackBlitz for browser-based exploration. The demos
+are NativeScript mobile apps, so run them with NativeScript Preview to see the
+native UI on a device.
+
 ## Quick start
 
 ```bash
