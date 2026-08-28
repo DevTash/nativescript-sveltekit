@@ -24,7 +24,7 @@
 
 <svelte:head>
   <title>NativeScript Showcase</title>
-  <meta name="description" content="Browser preview of three NativeScript-SvelteKit mock apps" />
+  <meta name="description" content="NativeScript Showcase browser preview with three fictional mock apps" />
 </svelte:head>
 
 <main>

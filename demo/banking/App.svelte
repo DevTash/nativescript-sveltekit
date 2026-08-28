@@ -12,7 +12,7 @@
 <Page>
   <ActionBar title="Pocketly" />
   <StackLayout style="background-color: #f8fafc; padding: 20;">
-    <Label text="GOOD MORNING, TASHA" style="color: #64748b; font-size: 12; font-weight: bold;" />
+    <Label text="GOOD MORNING" style="color: #64748b; font-size: 12; font-weight: bold;" />
     <Label text="Your money, made simple." style="color: #0f172a; font-size: 26; font-weight: bold; margin: 6 0 18;" />
     <StackLayout style="background-color: #172554; border-radius: 18; padding: 20; margin-bottom: 18;">
       <Label text="AVAILABLE BALANCE" style="color: #bfdbfe; font-size: 12;" />
