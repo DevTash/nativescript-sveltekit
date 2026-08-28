@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let title = '';
+  let { title = '' } = $props();
   let props = $derived({ title });
 </script>
 

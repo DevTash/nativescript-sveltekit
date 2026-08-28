@@ -1,7 +1,5 @@
 <script lang="ts">
-  export let items: unknown[] = [];
-  export let separatorColor = '';
-  export let rowHeight: number | undefined = undefined;
+  let { items = [] as unknown[], separatorColor = '', rowHeight = undefined as number | undefined } = $props();
   let props = $derived({ items, separatorColor, rowHeight });
 </script>
 

@@ -63,6 +63,7 @@ export class NSVComment extends NSVNode {
 }
 
 type NativeViewLike = {
+  style?: Record<string, unknown>;
   addChild?(child: unknown): void;
   insertChild?(child: unknown, index: number): void;
   removeChild?(child: unknown): void;
@@ -92,7 +93,14 @@ export class NSVElement extends NSVNode {
 
   setStyle(key: string, value: unknown): void {
     this.styles.set(key, value);
-    this.nativeView[key] = value;
+    if (!this.nativeView.style) {
+      this.nativeView.style = {};
+    }
+    if (value === undefined) {
+      delete this.nativeView.style[key];
+      return;
+    }
+    this.nativeView.style[key] = value;
   }
 
   setClassName(value: string): void {
@@ -116,6 +124,7 @@ export class NSVElement extends NSVNode {
   }
 
   override insertBefore(child: NSVNode, anchor: NSVNode | null): void {
+    const anchorIndex = anchor ? this.childNodes.indexOf(anchor) : -1;
     super.insertBefore(child, anchor);
 
     if (!(child instanceof NSVElement)) {
@@ -127,8 +136,7 @@ export class NSVElement extends NSVNode {
       return;
     }
 
-    const index = this.childNodes.indexOf(anchor);
-    this.nativeView.insertChild?.(child.nativeView, Math.max(index, 0));
+    this.nativeView.insertChild?.(child.nativeView, Math.max(anchorIndex, 0));
   }
 
   override removeChild(child: NSVNode): void {

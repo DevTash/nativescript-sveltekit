@@ -15,7 +15,7 @@ export function patchProp(el: NSVElement, key: string, prevValue: unknown, nextV
     return;
   }
 
-  if (/^on[:A-Z]/.test(key) || key.startsWith('on:')) {
+  if (/^on[:a-zA-Z]/.test(key)) {
     patchEvent(el, key, prevValue, nextValue);
     return;
   }

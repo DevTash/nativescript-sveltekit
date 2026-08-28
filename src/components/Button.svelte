@@ -1,6 +1,5 @@
 <script lang="ts">
-  export let text = '';
-  export let isEnabled = true;
+  let { text = '', isEnabled = true } = $props();
   let props = $derived({ text, isEnabled });
 </script>
 

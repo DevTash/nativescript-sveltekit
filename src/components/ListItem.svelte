@@ -1,6 +1,5 @@
 <script lang="ts">
-  export let className = '';
-  export let item: unknown = undefined;
+  let { className = '', item = undefined as unknown } = $props();
   let props = $derived({ className, item });
 </script>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let text = '';
+  let { text = '' } = $props();
   let props = $derived({ text });
 </script>
 
