@@ -61,7 +61,7 @@
       </StackLayout>
       {#each songs as song, index}
         <GridLayout columns="auto,*,auto" style="background-color: white; border-radius: 12; padding: 14; margin-bottom: 8;">
-          <Label col="0" text={`0${index + 1}`} style="color: #8b5cf6; font-size: 16; margin-right: 14; vertical-align: center;" />
+          <Label col="0" text={String(index + 1).padStart(2, '0')} style="color: #8b5cf6; font-size: 16; margin-right: 14; vertical-align: center;" />
           <StackLayout col="1">
             <Label text={song.title} style="color: #0f172a; font-size: 16; font-weight: bold;" />
             <Label text={song.artist} style="color: #64748b; font-size: 12; margin-top: 4;" />
