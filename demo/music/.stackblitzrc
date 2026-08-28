@@ -1,4 +1,4 @@
 {
   "installCommand": "npm install",
-  "startCommand": "npm run preview"
+  "startCommand": "npm run build"
 }
