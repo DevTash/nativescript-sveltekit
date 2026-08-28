@@ -5,6 +5,10 @@
   let playing = $state(false);
   let transferSent = $state(false);
   let selectedMovie = $state<string | null>(null);
+  const selectApp = (app: AppName) => {
+    activeApp = app;
+    if (app !== 'banking') transferSent = false;
+  };
 
   const transactions = [
     ['Green Basket', 'Today · Card payment', '-$48.20'],
@@ -36,9 +40,9 @@
   </header>
 
   <nav aria-label="Choose a mock app">
-    <button class:active={activeApp === 'banking'} onclick={() => activeApp = 'banking'}>Pocketly</button>
-    <button class:active={activeApp === 'music'} onclick={() => activeApp = 'music'}>EchoHarbor</button>
-    <button class:active={activeApp === 'movies'} onclick={() => activeApp = 'movies'}>FlickNest</button>
+    <button class:active={activeApp === 'banking'} onclick={() => selectApp('banking')}>Pocketly</button>
+    <button class:active={activeApp === 'music'} onclick={() => selectApp('music')}>EchoHarbor</button>
+    <button class:active={activeApp === 'movies'} onclick={() => selectApp('movies')}>FlickNest</button>
   </nav>
 
   {#if activeApp === 'banking'}
@@ -51,7 +55,7 @@
         <button onclick={() => balanceVisible = !balanceVisible}>{balanceVisible ? 'Hide balance' : 'Show balance'}</button>
       </div>
       <div class="actions"><button onclick={() => transferSent = true}>Send money</button><button>Add money</button></div>
-      {#if transferSent}<p class="confirmation">Transfer sent successfully.</p>{/if}
+      {#if transferSent}<p class="confirmation">Transfer sent successfully. <button onclick={() => transferSent = false}>Dismiss</button></p>{/if}
       <h3>Recent activity</h3>
       {#each transactions as transaction}
         <article class="row"><div><strong>{transaction[0]}</strong><small>{transaction[1]}</small></div><b>{transaction[2]}</b></article>
