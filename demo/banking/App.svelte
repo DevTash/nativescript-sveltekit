@@ -20,7 +20,7 @@
       <Button text={balanceVisible ? 'Hide balance' : 'Show balance'} on:tap={() => balanceVisible = !balanceVisible} />
     </StackLayout>
     <GridLayout columns="*,*" style="margin-bottom: 18;">
-      <Button col="0" text={transferSent ? 'Transfer sent' : 'Send money'} on:tap={() => transferSent = true} />
+      <Button col="0" text={transferSent ? 'Send another transfer' : 'Send money'} on:tap={() => transferSent = !transferSent} />
       <Button col="1" text="Add money" />
     </GridLayout>
     <Label text="Recent activity" style="color: #0f172a; font-size: 20; font-weight: bold; margin-bottom: 8;" />
