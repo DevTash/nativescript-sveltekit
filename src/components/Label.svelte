@@ -1,8 +1,10 @@
 <script lang="ts">
-  let { text = '' } = $props();
+  import type { Snippet } from 'svelte';
+
+  let { text = '', children }: { text?: string; children?: Snippet } = $props();
   let props = $derived({ text });
 </script>
 
 <svelte:element this="Label" {...props}>
-  <slot />
+  {@render children?.()}
 </svelte:element>
