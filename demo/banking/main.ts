@@ -8,4 +8,6 @@ const NativeApp = Object.assign(App, {
   }),
 });
 
-createApp(NativeApp).start();
+const app = createApp(NativeApp);
+app.mount();
+app.start();
