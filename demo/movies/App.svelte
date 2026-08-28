@@ -13,7 +13,7 @@
     <Label text="MY LIST" style="color: #f87171; font-size: 12; font-weight: bold;" />
     <Label text="Continue watching" style="color: white; font-size: 28; font-weight: bold; margin: 6 0 18;" />
     {#each movies as movie}
-      <GridLayout columns="110,*" style="background-color: #1f2937; border-radius: 12; margin-bottom: 10;">
+      <GridLayout columns="110,*" style={`background-color: ${selectedMovie === movie.title ? '#374151' : '#1f2937'}; border-radius: 12; margin-bottom: 10;`}>
         <StackLayout col="0" style={`background-color: ${movie.color}; height: 100; border-radius: 12 0 0 12;`}>
           <Label text="▶" style="color: white; font-size: 30; text-align: center; vertical-align: center;" />
         </StackLayout>

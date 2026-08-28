@@ -21,8 +21,11 @@
     </StackLayout>
     <GridLayout columns="*,*" style="margin-bottom: 18;">
       <StackLayout col="0">
-        <Button text="Send money" on:tap={() => { transferSent = true; setTimeout(() => transferSent = false, 2000); }} />
-        {#if transferSent}<Label text="Transfer sent successfully" style="color: #15803d; font-size: 11; text-align: center; margin-top: 4;" />{/if}
+        <Button text="Send money" on:tap={() => transferSent = true} />
+        {#if transferSent}
+          <Label text="Transfer sent successfully" style="color: #15803d; font-size: 11; text-align: center; margin-top: 4;" />
+          <Button text="Dismiss" on:tap={() => transferSent = false} />
+        {/if}
       </StackLayout>
       <Button col="1" text="Add money" />
     </GridLayout>
