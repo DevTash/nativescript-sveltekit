@@ -26,8 +26,8 @@ Use StackBlitz to browse and edit each demo online:
 - [Open the movies demo in StackBlitz](https://stackblitz.com/github/DevTash/nativescript-sveltekit/tree/main/demo/movies)
 
 These links open the source in StackBlitz for browser-based exploration. The demos
-are NativeScript mobile apps, so run them with NativeScript Preview to see the
-native UI on a device.
+are NativeScript mobile apps and do not start automatically in StackBlitz, so run
+them with NativeScript Preview to see the native UI on a device.
 
 Each demo is a standalone NativeScript project. From a demo directory, run
 `npm install`, then `npm run preview` to start NativeScript Preview.
