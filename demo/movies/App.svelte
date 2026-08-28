@@ -8,7 +8,7 @@
 </script>
 
 <Page>
-  <ActionBar title="Netflix" />
+  <ActionBar title="FlickNest" />
   <StackLayout style="background-color: #111827; padding: 20;">
     <Label text="MY LIST" style="color: #f87171; font-size: 12; font-weight: bold;" />
     <Label text="Continue watching" style="color: white; font-size: 28; font-weight: bold; margin: 6 0 18;" />

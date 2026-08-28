@@ -6,15 +6,15 @@
   let playing = $state(false);
 
   const transactions = [
-    { merchant: 'Whole Foods', detail: 'Today · Card payment', amount: '-$48.20' },
-    { merchant: 'Acme Inc.', detail: 'Yesterday · Income', amount: '+$2,450.00' },
-    { merchant: 'Metro Coffee', detail: 'Yesterday · Card payment', amount: '-$5.80' },
+    { merchant: 'Green Basket', detail: 'Today · Card payment', amount: '-$48.20' },
+    { merchant: 'Northstar Labs', detail: 'Yesterday · Income', amount: '+$2,450.00' },
+    { merchant: 'Corner Cup', detail: 'Yesterday · Card payment', amount: '-$5.80' },
   ];
 
   const songs = [
-    { title: 'Midnight City', artist: 'M83', duration: '4:03' },
-    { title: 'Sunset Lover', artist: 'Petit Biscuit', duration: '3:58' },
-    { title: 'Electric Feel', artist: 'MGMT', duration: '3:49' },
+    { title: 'Neon Streets', artist: 'The Paper Satellites', duration: '4:03' },
+    { title: 'Golden Hour', artist: 'Luma Fields', duration: '3:58' },
+    { title: 'Static Hearts', artist: 'Velvet Circuit', duration: '3:49' },
   ];
 
   const movies = [

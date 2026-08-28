@@ -3,14 +3,14 @@
   let transferSent = $state(false);
 
   const transactions = [
-    { merchant: 'Whole Foods', detail: 'Today · Card payment', amount: '-$48.20' },
-    { merchant: 'Acme Inc.', detail: 'Yesterday · Income', amount: '+$2,450.00' },
-    { merchant: 'Metro Coffee', detail: 'Yesterday · Card payment', amount: '-$5.80' },
+    { merchant: 'Green Basket', detail: 'Today · Card payment', amount: '-$48.20' },
+    { merchant: 'Northstar Labs', detail: 'Yesterday · Income', amount: '+$2,450.00' },
+    { merchant: 'Corner Cup', detail: 'Yesterday · Card payment', amount: '-$5.80' },
   ];
 </script>
 
 <Page>
-  <ActionBar title="Monzo" />
+  <ActionBar title="Pocketly" />
   <StackLayout style="background-color: #f8fafc; padding: 20;">
     <Label text="GOOD MORNING, TASHA" style="color: #64748b; font-size: 12; font-weight: bold;" />
     <Label text="Your money, made simple." style="color: #0f172a; font-size: 26; font-weight: bold; margin: 6 0 18;" />

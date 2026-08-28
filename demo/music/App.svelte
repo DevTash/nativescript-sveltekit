@@ -1,14 +1,14 @@
 <script lang="ts">
   let playing = $state(false);
   const songs = [
-    { title: 'Midnight City', artist: 'M83', duration: '4:03' },
-    { title: 'Sunset Lover', artist: 'Petit Biscuit', duration: '3:58' },
-    { title: 'Electric Feel', artist: 'MGMT', duration: '3:49' },
+    { title: 'Neon Streets', artist: 'The Paper Satellites', duration: '4:03' },
+    { title: 'Golden Hour', artist: 'Luma Fields', duration: '3:58' },
+    { title: 'Static Hearts', artist: 'Velvet Circuit', duration: '3:49' },
   ];
 </script>
 
 <Page>
-  <ActionBar title="SoundCloud" />
+  <ActionBar title="EchoHarbor" />
   <StackLayout style="background-color: #fff7ed; padding: 20;">
     <Label text="YOUR MIX" style="color: #c2410c; font-size: 12; font-weight: bold;" />
     <Label text="Late night drive" style="color: #431407; font-size: 30; font-weight: bold; margin: 6 0;" />
